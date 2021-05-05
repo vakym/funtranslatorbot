@@ -14,7 +14,7 @@ namespace funtranslatorbot.translationAPI
     public class Translator : ITranslator
     {
         private readonly string baseHostURL = "https://api.cognitive.microsofttranslator.com";
-        private readonly string APIKey = "0955c66aaea5418595388eb967bc2b2a";
+        private readonly string APIKey = "";
         
         public string GetTextLanguage(string inputText)
         {
