@@ -7,8 +7,8 @@ namespace funtranslatorbot
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-           
+            var translator = new Translator();
+            string result = translator.GetTranslation("Hello world", "en", "ru");
             
         }
     }
