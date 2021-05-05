@@ -51,6 +51,17 @@ namespace funtranslatorbot.translationAPI
         {
             return JsonConvert.DeserializeObject<List<TranslatedTextDTO>>(inputJson).First().translations[0].text;
         }
+
+        public List<string> GetAvailableLanguages()
+        {
+            var url = baseHostURL.AppendPathSegment("/languages")
+                                .SetQueryParam("api-version", "3.0")
+                                .SetQueryParam("scope", "translation")
+                                .ToString();
+            var result = url.GetAsync().Result;
+            var stringResponse = result.ResponseMessage.Content.ReadAsStringAsync().Result;
+            return JsonConvert.DeserializeObject<AvailableLanguagesDTO>(stringResponse).translation.Keys.ToList();
+        }
     }
     
 }
