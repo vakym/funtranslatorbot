@@ -9,7 +9,7 @@ namespace funtranslatorbot
         {
             var translator = new Translator();
             string result = translator.GetTranslation("Hello world", "en", "ru");
-            
+            string lang = translator.GetTextLanguage("Hello world");
         }
     }
 }
