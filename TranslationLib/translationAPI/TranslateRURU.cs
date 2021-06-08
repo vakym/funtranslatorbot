@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace funtranslatorbot.translationAPI
+namespace TranslationLib
 {
     public class TranslateRURU : ITranslateRURU
     {

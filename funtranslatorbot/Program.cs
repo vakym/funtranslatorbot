@@ -1,5 +1,7 @@
 ﻿using System;
-using funtranslatorbot.translationAPI;
+using TranslationLib;
+
+
 
 namespace funtranslatorbot
 {

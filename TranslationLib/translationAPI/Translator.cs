@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Flurl;
 using Flurl.Http;
-using funtranslatorbot.DTO;
+using TranslationLib.DTO;
 using Newtonsoft.Json;
 
-namespace funtranslatorbot.translationAPI
+namespace TranslationLib
 {
     public class Translator : ITranslator
     {

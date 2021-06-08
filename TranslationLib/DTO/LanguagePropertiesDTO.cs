@@ -1,4 +1,4 @@
-﻿namespace funtranslatorbot.DTO
+﻿namespace TranslationLib.DTO
 {
     public class LanguagePropertiesDTO
     {
