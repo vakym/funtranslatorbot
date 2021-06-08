@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "funtranslatorbot", "funtran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationLib", "TranslationLib\TranslationLib.csproj", "{B420E2E4-FFC1-4127-9D74-34B36A68947C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunTranslateApi", "TelegramBot\FunTranslateApi.csproj", "{23A99ABD-F875-471C-BCB9-8A275C322D93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A99ABD-F875-471C-BCB9-8A275C322D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A99ABD-F875-471C-BCB9-8A275C322D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A99ABD-F875-471C-BCB9-8A275C322D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A99ABD-F875-471C-BCB9-8A275C322D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
