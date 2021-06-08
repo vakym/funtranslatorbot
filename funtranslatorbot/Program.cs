@@ -1,9 +1,9 @@
 ﻿using System;
-using funtranslatorbot.translationAPI;
+using TranslationLib;
 
 
 
-namespace funtranslatorbot.translationAPI
+namespace funtranslatorbot
 {
     class Program
     {
