@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "funtranslatorbot", "funtranslatorbot\funtranslatorbot.csproj", "{953FE90F-9794-4D77-82FD-23C75D2C5981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotLibrary", "BotLibrary\BotLibrary.csproj", "{5CEFE5DB-C967-4EC1-A69B-6F5973C19BC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationLib", "TranslationLib\TranslationLib.csproj", "{B420E2E4-FFC1-4127-9D74-34B36A68947C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{953FE90F-9794-4D77-82FD-23C75D2C5981}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953FE90F-9794-4D77-82FD-23C75D2C5981}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953FE90F-9794-4D77-82FD-23C75D2C5981}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CEFE5DB-C967-4EC1-A69B-6F5973C19BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CEFE5DB-C967-4EC1-A69B-6F5973C19BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CEFE5DB-C967-4EC1-A69B-6F5973C19BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CEFE5DB-C967-4EC1-A69B-6F5973C19BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B420E2E4-FFC1-4127-9D74-34B36A68947C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
