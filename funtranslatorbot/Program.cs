@@ -10,8 +10,11 @@ namespace funtranslatorbot.translationAPI
         static void Main(string[] args)
         {
             var translator = new Translator();
-            string result = translator.GetTranslation("Hello world", "en", "ru");
-            string lang = translator.GetTextLanguage("Hello world");
+            var langs = translator.GetAvailableLanguages();
+            var someShit = new TranslateRURU();
+            var result = someShit.TranslateCount("", 10);
+            Console.WriteLine(result);
+            
         }
     }
 }
