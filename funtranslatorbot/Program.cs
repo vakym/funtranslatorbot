@@ -1,8 +1,6 @@
 ﻿using System;
 using TranslationLib;
 
-
-
 namespace funtranslatorbot
 {
     class Program
