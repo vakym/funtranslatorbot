@@ -16,13 +16,14 @@ namespace FunTranslateApi.Controllers
         [HttpGet]
         public string Get([FromQuery] string text, [FromQuery] int count)
         {
-            if (text != null && text.Length > 0 && count > 0)
+            if (string.IsNullOrEmpty(text) || count <= 0)
             {
-                var translateRURU = new TranslateRURU();
-                return translateRURU.TranslateCount(text, count);
-            }
-            else
                 return BadRequest().ToString();
+            }
+            
+            var translateRURU = new TranslateRURU();
+            return translateRURU.TranslateCount(text, count);              
+            
         }
     }
 }
