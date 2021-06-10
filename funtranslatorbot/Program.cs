@@ -12,7 +12,6 @@ namespace funtranslatorbot
             var someShit = new TranslateRURU();
             var result = someShit.TranslateCount("", 10);
             Console.WriteLine(result);
-            
         }
     }
 }

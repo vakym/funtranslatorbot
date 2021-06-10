@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TranslationLib.DTO
 {
     public class DetectedLanguageDTO
     {
-        public List<Alternative> alternatives { get; set; }
-        public bool isTranslationSupported { get; set; }
-        public bool isTransliterationSupported { get; set; }
-        public string language { get; set; }
-        public double score { get; set; }
+        public List<Alternative> Alternatives { get; set; }
+        public bool IsTranslationSupported { get; set; }
+        public bool IsTransliterationSupported { get; set; }
+        public string Language { get; set; }
+        public double Score { get; set; }
     }
 
     public class Alternative
     {
-        public bool isTranslationSupported { get; set; }
-        public bool isTransliterationSupported { get; set; }
-        public string language { get; set; }
-        public double score { get; set; }
+        public bool IsTranslationSupported { get; set; }
+        public bool IsTransliterationSupported { get; set; }
+        public string Language { get; set; }
+        public double Score { get; set; }
     }
 }

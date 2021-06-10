@@ -1,5 +1,4 @@
-﻿
-namespace TranslationLib
+﻿namespace TranslationLib
 {
     public interface ITranslator
     {

@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TranslationLib.DTO
 {
     public class TranslatedTextDTO
     {
-        public List<Translation> translations { get; set; }
+        public List<Translation> Translations { get; set; }
     }
     public class Translation
     {
-        public string text { get; set; }
-        public string to { get; set; }
+        public string Text { get; set; }
+        public string To { get; set; }
     }
 }

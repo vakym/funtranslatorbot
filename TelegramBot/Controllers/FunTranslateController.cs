@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
+﻿using Microsoft.AspNetCore.Mvc;
 using TranslationLib;
 
 namespace FunTranslateApi.Controllers
@@ -14,16 +8,11 @@ namespace FunTranslateApi.Controllers
     public class FunTranslateController : ControllerBase
     {
         [HttpGet]
-        public string Get([FromQuery] string text, [FromQuery] int count)
+        public IActionResult Get([FromQuery] string text, [FromQuery] int count)
         {
-            if (string.IsNullOrEmpty(text) || count <= 0)
-            {
-                return BadRequest().ToString();
-            }
-            
+            if (string.IsNullOrEmpty(text) || count <= 0) return BadRequest();
             var translateRURU = new TranslateRURU();
-            return translateRURU.TranslateCount(text, count);              
-            
+            return Ok(translateRURU.TranslateCount(text, count));              
         }
     }
 }

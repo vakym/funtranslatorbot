@@ -8,10 +8,12 @@ namespace TranslationLib
         private readonly Translator translator = new Translator();
         private readonly List<string> availableLanguages;
         private readonly Random rand = new Random();
+       
         public TranslateRURU()
         {
             availableLanguages = translator.GetAvailableLanguages();
         }
+        
         public string TranslateCount(string inputData, int count)
         {
             string sourceLanguage = translator.GetTextLanguage(inputData);

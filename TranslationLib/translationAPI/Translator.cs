@@ -22,7 +22,7 @@ namespace TranslationLib
                             .PostJsonAsync(new[] { new { text = inputText } })
                             .Result;
             var stringResponse = result.ResponseMessage.Content.ReadAsStringAsync().Result;
-            return JsonConvert.DeserializeObject<List<DetectedLanguageDTO>>(stringResponse).First().language;
+            return JsonConvert.DeserializeObject<List<DetectedLanguageDTO>>(stringResponse).First().Language;
         }
 
         public string GetTranslation(string inputText, string sourceLanguage, string targetLanguage)
@@ -45,7 +45,7 @@ namespace TranslationLib
         }
         private string GetTextMessageFromJson (string inputJson)
         {
-            return JsonConvert.DeserializeObject<List<TranslatedTextDTO>>(inputJson).First().translations[0].text;
+            return JsonConvert.DeserializeObject<List<TranslatedTextDTO>>(inputJson).First().Translations[0].Text;
         }
 
         public List<string> GetAvailableLanguages()
@@ -56,7 +56,7 @@ namespace TranslationLib
                                 .ToString();
             var result = url.GetAsync().Result;
             var stringResponse = result.ResponseMessage.Content.ReadAsStringAsync().Result;
-            return JsonConvert.DeserializeObject<AvailableLanguagesDTO>(stringResponse).translation.Keys.ToList();
+            return JsonConvert.DeserializeObject<AvailableLanguagesDTO>(stringResponse).Translation.Keys.ToList();
         }
     }
     
