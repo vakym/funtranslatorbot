@@ -14,15 +14,15 @@ namespace FunTranslateApi.Controllers
     public class FunTranslateController : ControllerBase
     {
         [HttpGet]
-        public string Get(string query)
+        public string Get([FromQuery] string text, [FromQuery] int count)
         {
-            var uri = new Uri(query);
-            //здесь еще офигенная защита от дурака
-            var fragment = uri.Fragment.TrimStart('?'); 
-            var text = HttpUtility.ParseQueryString(fragment).Get("text");
-            var count = int.Parse(HttpUtility.ParseQueryString(fragment).Get("count"));
-            var translateRURU = new TranslateRURU();
-            return translateRURU.TranslateCount(text, count);
+            if (text != null && text.Length > 0 && count > 0)
+            {
+                var translateRURU = new TranslateRURU();
+                return translateRURU.TranslateCount(text, count);
+            }
+            else
+                return BadRequest().ToString();
         }
     }
 }
