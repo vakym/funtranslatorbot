@@ -7,11 +7,17 @@ namespace FunTranslateApi.Controllers
     [ApiController]
     public class FunTranslateController : ControllerBase
     {
+        private readonly ITranslateRURU translateRURU;
+
+        public FunTranslateController(ITranslateRURU translateRURU)
+        {
+            this.translateRURU = translateRURU;
+        }
+
         [HttpGet]
         public IActionResult Get([FromQuery] string text, [FromQuery] int count)
         {
             if (string.IsNullOrEmpty(text) || count <= 0) return BadRequest();
-            var translateRURU = new TranslateRURU();
             return Ok(translateRURU.TranslateCount(text, count));              
         }
     }
